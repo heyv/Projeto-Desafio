@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Teste</h1>
-</body>
+    <!-- Framework materiaize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+    <nav>
+        <h1>Tabela de Jogos</h1>
+    </nav>
+  <body>
+    
+    <div class="table-container">
+       
+        <table>
+            <div><input id="value" type="textbox" placeholder="Digite o Placar"> <a id="btn" class="waves-effect waves-light btn">+</a></div> 
+            <thead>
+            
+                <tr>
+                    
+                    <th>Jogo</th>
+                    <th>Placar</th>
+                    <th>Mínimo da Temporada</th>
+                    <th>Máximo da Temporada</th>
+                    <th>Quebra Recorde mín.</th>
+                    <th>Quebra Recorde máx.</th>
+                </tr>
+            </thead>
+            <tbody id="novoPl">
+                <tr>
+                    <td>1</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>24</td>
+                    <td>12</td>
+                    <td>24</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>24</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>24</td>
+                    <td>10</td>
+                    <td>24</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>               
+            </tbody>
+        </table>
+    </div>
+</main>
+    <script src="./script.js"></script>
+    <script src="./contscript.js"></script>
+  </body>
 </html>
